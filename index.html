@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="favicon.ico">
     <title>Cedrick Monesit</title>
-    <!--<script src="https://kit.fontawesome.com/f847e48071.js" crossorigin="anonymous">
-    </script> -->
     <script defer src="js/all.js"></script>
 </head>
 <body>
@@ -39,9 +37,34 @@
             </a>
 
         </ul>
-        <i class="mobile-nav icon fas fa-bars "></i>
+        <span class="mobile-nav-bars">
+            <i class="icon fas fa-bars"></i>
+        </span>
     </nav>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav_items">
+            <a> 
+                <li class="mobile-nav_item">
+                    About Me
+                </li>
+            </a>
+            <a> 
+                <li class="mobile-nav_item">
+                    Projects
+                </li>
+            </a>
+                <li class="mobile-nav_item">
+                    Contact Me
+                </li>
+            <a>
+                <li class="mobile-nav_item" id="resume">
+                    Resume
+                    <i class="fas fa-download" id="resume-download-button"></i>
+                </li>
+            </a>
 
+        </ul>
+    </nav>
 
     <header class="main-header">
         <div class="main-header-container">
@@ -86,8 +109,27 @@
                 </div>
             </div>
         </section>
+        <section class="projects">
+            <div class="projects-content">
+                <header>
+                    <h2>My Projects</h2>
+                </header>
+                <hr>
+            </div>
+            <div class="projects-figures">
+                <figure>Figure 1</figure>
+                <figure>Figure 2</figure>
+                <figure>Figure 3</figure>
+                <figure>Figure 4</figure>
+                <figure>Figure 5</figure>
+                <figure>Figure 6</figure>
+                <figure>Figure 7</figure>
+                <figure>Figure 8</figure>
+            </div>
+        </section>
     </main>
     <footer class="main-footer">
     </footer>
+    <script src="shared.js"></script>
 </body>
 </html>
