@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap');/*Oswald , sans-serif*/
+@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald|Source+Sans+Pro&display=swap');/*Source Sans Pro , sans-serif*/
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');/*Public Sans , sans-serif*/
 * {
     box-sizing: border-box;
 }
@@ -9,16 +9,20 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.open {
+    display: block !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
 body {
     margin: 0;
-
+    font-family: 'Source Sans Pro','Public Sans', sans-serif;
 }
 .button {
     padding: 0.5rem 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     font-size: 1rem;
     background:#5bc0de;
     border: 1px solid #5bc0de;
@@ -37,8 +41,8 @@ body {
 #resume {
     content:"\f019";
 }
+
 .icon {
-    display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -95,6 +99,7 @@ body {
 }
 .mobile-nav-bars {
     display:none;
+    padding-bottom: 0.5rem;
 }
 .mobile-nav {
     width: 100vw;
@@ -130,7 +135,7 @@ body {
 }
 .main-header-container {
     display:flex;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     color: white;
     font-size: 1.1rem;
     width: 100%;
@@ -167,11 +172,6 @@ body {
     text-decoration: none;
 }
 
-
-.arrow {
-    margin-top: 1rem;
-    height:auto;
-}
 .swing {
 
     animation: swing ease-in-out .5s 3 alternate;
@@ -220,7 +220,7 @@ body {
 
 }
 .summary-about-me {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     animation: 1s ease-in-out 0s 1 SlideInFromLeft;
 }
 @keyframes SlideInFromLeft {
