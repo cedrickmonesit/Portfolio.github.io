@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap');/*Oswald , sans-serif*/
 @import url('https://fonts.googleapis.com/css?family=Girassol|Oswald|Source+Sans+Pro&display=swap');/*Source Sans Pro , sans-serif*/
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');/*Public Sans , sans-serif*/
+
 * {
     box-sizing: border-box;
 }
@@ -77,6 +78,9 @@ body {
     margin: 0 1rem;
     cursor: pointer;
     flex-wrap: wrap;
+}
+.main-nav_items a {
+    text-decoration: none;
 }
 .main-nav_item {
     margin: 0 0.75rem;
