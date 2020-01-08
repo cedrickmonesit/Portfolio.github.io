@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald&display=swap');/*Oswald , sans-serif*/
+@import url('https://fonts.googleapis.com/css?family=Girassol|Oswald|Source+Sans+Pro&display=swap');/*Source Sans Pro , sans-serif*/
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');/*Public Sans , sans-serif*/
+
 * {
     box-sizing: border-box;
 }
@@ -9,16 +10,20 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.open {
+    display: block !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
 body {
     margin: 0;
-
+    font-family: 'Source Sans Pro','Public Sans', sans-serif;
 }
 .button {
     padding: 0.5rem 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     font-size: 1rem;
     background:#5bc0de;
     border: 1px solid #5bc0de;
@@ -37,8 +42,8 @@ body {
 #resume {
     content:"\f019";
 }
+
 .icon {
-    display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -60,7 +65,6 @@ body {
     z-index: 100;
     justify-content: space-between;
     align-items: center;
-    /*font-family: 'Girassol', cursive;*/
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     padding: 0.75rem;
@@ -75,11 +79,12 @@ body {
     cursor: pointer;
     flex-wrap: wrap;
 }
+.main-nav_items a {
+    text-decoration: none;
+}
 .main-nav_item {
     margin: 0 0.75rem;
-    /*color: rgb(20,165,213);*/
-    /*color: rgb(137,207,240);*/
-    color: #5bc0de;
+    color: white;
     animation: 1s ease-in-out 0s 1 SlideInFromLeft;
 }
 @keyframes SlideInFromLeft {
@@ -94,16 +99,36 @@ body {
 }
 .main-nav_item:hover,
 .main-nav_item:active {
-    color: white;
+    color: #75d5fd;
+}
+.mobile-nav-bars {
+    display:none;
+    padding-bottom: 0.5rem;
 }
 .mobile-nav {
+    width: 100vw;
+    position: fixed;
+    background: rgba(0,0,0,0.3);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 0.75rem;
+    padding-top: 5rem;
     display: none;
 }
+.mobile-nav_items {
+    list-style: none;
+    text-align: right;
+}
+.mobile-nav_item {
+    color: white; 
+    cursor: pointer;
+}
 .main-header {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/computer-desk.jpg') center/cover no-repeat border-box, rgb(20,165,213);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url('images/computer-desk.jpg') 
+        center/cover no-repeat border-box, 
+        rgb(20,165,213);
     height: 100vh;
     min-height: 35rem;
     padding-top: 15rem;
@@ -114,7 +139,7 @@ body {
 }
 .main-header-container {
     display:flex;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     color: white;
     font-size: 1.1rem;
     width: 100%;
@@ -127,7 +152,7 @@ body {
     flex-shrink: 1;
     max-width: 470px;
     text-align: center;
-
+    
 }
 .main-header-side-content {
     display: none;
@@ -151,11 +176,6 @@ body {
     text-decoration: none;
 }
 
-
-.arrow {
-    margin-top: 1rem;
-    height:auto;
-}
 .swing {
 
     animation: swing ease-in-out .5s 3 alternate;
@@ -193,6 +213,7 @@ body {
     padding: 5rem;
     display: flex;
     justify-content: center;
+    background: #F5F5F5;
 }
 .summary-block {
     display: flex;
@@ -203,7 +224,7 @@ body {
 
 }
 .summary-about-me {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: inherit;
     animation: 1s ease-in-out 0s 1 SlideInFromLeft;
 }
 @keyframes SlideInFromLeft {
@@ -253,7 +274,29 @@ body {
     padding: 1rem;
 
 }
-
+.projects {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.projects-content h2 {
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+}
+.projects-content hr {
+    width: 8rem;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    margin: 1.5rem 0;
+}
+.projects-figures {
+    display: block;
+}
+.projects-figures figure {
+    height: 100px;
+    text-align: center;
+}
 @media (min-width: 46.88rem){
         .main-header-side-content {
         display: block;
@@ -287,6 +330,7 @@ body {
     .main-header-content {
         text-align: left;
     }
+
     .summary-block {
         flex-direction: row;
         max-width: 720px;
@@ -303,36 +347,39 @@ body {
         border: 0.3rem solid #5bc0de;
         border-radius: 0.5rem;
     }
+    .projects {
+        /*display: flex;
+        align-items: center;*/
+        min-height: 350px;
+        margin-top: 3rem;
+    }
+
+    .projects-figures {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4,[column-start] minmax(100px, 250px) [column-end]);
+        grid-template-rows: repeat(2, [row-start] minmax(200px,300px) [row-end]);
+        grid-gap: 10px;
+        padding: 1rem;  
+    }
+    .projects-figures figure {
+        margin: 0;
+        border: 1px solid black;
+        height: 100%;
+    }
 }
 @media (max-width: 30rem) {
     .main-nav_items {
         display: none
     }
-    .mobile-nav {
+    .mobile-nav-bars {
         display: block;
         cursor: pointer;
         color: white;
         font-size: 2rem;
     }
 }
-/*@media (min-width: 800px) {
-    .main-header {
-        padding-top: 8rem;
-    }
-}*/
-/*
-@media (max-width: 850px)  and (max-height:400px) {
-    .main-header {
-        padding-top: 50%;
-    }
-    .arrow {
-        margin: 0;
-    }
-    .main-header-content h1 {
-        margin: 0;
-        font-size: .5rem;
-    }
-} */
+
 /* Landscape*/
 @media (max-height: 450px) {
     .main-header {
