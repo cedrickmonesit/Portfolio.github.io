@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="animations/animate.css">
     <title>Cedrick Monesit</title>
-    <script defer src="js/all.js"></script>
+    <script defer src="js/icons/all.js"></script>
 </head>
 
 <body>
@@ -19,20 +20,20 @@
         </div>
         <ul class="main-nav_items">
             <a href="#about-me">
-                <li class="main-nav_item">
+                <li class="main-nav_item animated fadeInLeft delay-250ms">
                     About Me
                 </li>
             </a>
             <a href="#project-list">
-                <li class="main-nav_item">
+                <li class="main-nav_item animated fadeInLeft delay-500ms">
                     Projects
                 </li>
             </a>
-            <li class="main-nav_item">
+            <li class="main-nav_item animated fadeInLeft delay-750ms">
                 Contact Me
             </li>
             <a>
-                <li class="main-nav_item" id="resume">
+                <li class="main-nav_item animated fadeInLeft delay-1s" id="resume">
                     Resume
                     <span>
                         <i class="fas fa-download" id="resume-download-button"></i>
@@ -49,20 +50,20 @@
     <nav class="mobile-nav">
         <ul class="mobile-nav_items">
             <a>
-                <li class="mobile-nav_item">
+                <li class="mobile-nav_item animated fadeInRight delay-250ms">
                     About Me
                 </li>
             </a>
             <a href="#projects">
-                <li class="mobile-nav_item">
+                <li class="mobile-nav_item animated fadeInRight delay-500ms">
                     Projects
                 </li>
             </a>
-            <li class="mobile-nav_item">
+            <li class="mobile-nav_item animated fadeInRight delay-750ms">
                 Contact Me
             </li>
             <a>
-                <li class="mobile-nav_item" id="resume">
+                <li class="mobile-nav_item animated fadeInRight delay-1s" id="resume">
                     Resume
                     <i class="fas fa-download" id="resume-download-button"></i>
                 </li>
@@ -73,7 +74,7 @@
     <!-- End of Mobile Nav -->
     <header class="main-header">
         <div class="main-header-container">
-            <div class="main-header-content appear">
+            <div class="main-header-content animated fadeIn delay-500ms">
                 <a href="index.html">
                     <img class="main-full-brand_image" src="images/brand.png" alt="Cedrick Monesit's brand logo" />
                 </a>
@@ -83,7 +84,7 @@
                     - Iyanla Vanzant</p>
             </div>
             <!-- End of Main Header Content -->
-            <div class="main-header-side-content appear">
+            <div class="main-header-side-content animated fadeIn delay-500ms">
                 <p>Want to get in touch? I'm always looking for new projects and opportunities. Get in touch!</p>
                 <a href="index.html">
                     <button>
@@ -95,14 +96,14 @@
         </div>
         <!-- End of Main Header Container -->
         <a class="scroll" href="#main-content">
-                <i class="icon fas fa-sort-down swing arrow"></i>
+                <i class="icon fas fa-sort-down arrow animated swing delay-1s"></i>
         </a>
     </header>
     <!-- End of Main Header -->
     <main class="main-container" id="main-content">
         <section class="summary" id="about-me">
             <div class="summary-block">
-                <div class="summary-about-me">
+                <div class="summary-about-me wow fadeInLeft delay-500ms">
                     <header>
                         <h2>Who am I...</h2>
                     </header>
@@ -113,7 +114,7 @@
                         <button class="button">Find Out More</button>
                     </a>
                 </div>
-                <div class="summary-image-container">
+                <div class="summary-image-container wow fadeInRight delay-500ms">
                     <img class="summary-image" src="images/network.png" alt="Computer, cloud, and world." />
                 </div>
             </div>
@@ -121,20 +122,20 @@
         <!-- End of Summary -->
         <section class="projects" id="project-list">
             <div class="projects-content">
-                <header>
+                <header class="wow fadeInUp">
                     <h2>My Projects</h2>
+                    <hr>
                 </header>
-                <hr>
             </div>
             <div class="projects-figures">
-                <figure>Figure 1</figure>
-                <figure>Figure 2</figure>
-                <figure>Figure 3</figure>
-                <figure>Figure 4</figure>
-                <figure>Figure 5</figure>
-                <figure>Figure 6</figure>
-                <figure>Figure 7</figure>
-                <figure>Figure 8</figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
+                <figure class="wow fadeIn delay-500ms">Project </figure>
             </div>
         </section>
         <!-- End of Projects -->
@@ -152,7 +153,11 @@
         <!-- End of Main Footer Container -->
     </footer>
     <!-- End of Main Footer -->
-    <script src="shared.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/shared.js"></script>
 </body>
 
 </html>
