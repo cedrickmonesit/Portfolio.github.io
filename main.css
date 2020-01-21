@@ -4,6 +4,8 @@
 /*Source Sans Pro , sans-serif*/
 @import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
 /*Public Sans , sans-serif*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap');
+/* Presets */
 * {
   box-sizing: border-box;
 }
@@ -22,6 +24,8 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", "Public Sans", sans-serif;
 }
+/* End of Presets */
+
 /* Delays */
 .delay-250ms {
   animation-delay: 0.25s;
@@ -32,9 +36,9 @@ body {
 .delay-750ms {
   animation-delay: 0.75s;
 }
-
 /* End of Delays */
 
+/* Buttons */
 .button {
   padding: 0.5rem 1rem;
   font-family: inherit;
@@ -54,12 +58,18 @@ body {
   color: #5bc0de;
   background: none;
 }
+/* End of Buttons */
 
+/* Icons */
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
 .icon {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
 }
+/* End of Icons */
 
 .main-brand a {
   color: black;
@@ -141,15 +151,23 @@ body {
   padding-top: 5rem;
   display: none;
 }
-.mobile-nav .mobile-nav_items {
+.mobile-nav_items {
   list-style: none;
   text-align: right;
 }
-.mobile-nav .mobile-nav_items .mobile-nav_item {
+.mobile-nav_items a{
+  text-decoration: none;
+  font-style: normal;
+}
+.mobile-nav_item {
   color: white;
   cursor: pointer;
+  transition: color 0.5s;
 }
-
+.mobile-nav_item:hover{
+  color: #5bc0de;
+}
+/* Beginning Header Section */
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/computer-desk.jpg") center/cover no-repeat border-box, #14a5d5;
   height: 100vh;
@@ -200,6 +218,7 @@ body {
   font-size: 5rem;
 }
 
+/* Beginning Summary Section */
 .summary {
   padding: 5rem;
   display: flex;
@@ -249,6 +268,8 @@ body {
   padding: 1rem;
 }
 
+/* Beginning Projects Section */
+
 .projects {
   margin-top: 2.5rem;
   text-align: center;
@@ -270,13 +291,133 @@ body {
 
 .projects-figures {
   display: block;
+
 }
 
 .projects-figures figure {
   height: 100px;
   text-align: center;
+  border: solid #484848 0.25px;
 }
+/* End of Projects Sections */
 
+/* Begginning of Skills 
+Section */
+  .skills {
+    padding: 3rem 1rem;
+    background:#F5F5F5;
+  }
+  .skills h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .skills-block {
+    align-items: center;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+  }
+  .skills-block p{
+    font-family: inherit;
+    background-color: #5bc0de;
+    border: solid #5bc0de 1px;
+    padding: 1rem 1rem;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 0.25rem;
+  }
+
+  .skills-block p:hover{
+    color: #5bc0de;
+    background-color: white;
+  }
+
+  .pos {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  .skills-block p:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .skills-block p:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  .skills-block p:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .skills-block p:nth-child(4) {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .skills-block p:nth-child(5) {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .skills-block p:nth-child(6) {
+    grid-area: 3 / 3 / 4 / 5;
+  }
+  .skills-block p:nth-child(7) {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+  .skills-block p:nth-child(8) {
+    grid-area: 4 / 3 / 5 / 5;
+  }
+/* End of skills Section */
+
+/* Beginning of Footer */
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+.main-footer {
+  background-color: #484848;
+  color: white;
+  padding: 3rem 1rem;
+  font-family: inherit;
+}
+.main-footer a{
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+}
+.main-footer-content {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-social-content a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.5s;
+}
+.footer-social-content a:hover {
+  color: #5bc0de; 
+}
+.footer-address-content a {
+  display: inline-block;
+  margin-top: 0.5rem; 
+
+}
+.footer-address-content i {
+  display: inline-block;
+  margin-right: 0.2rem; 
+
+}
+.footer-rights {
+  text-align: center;
+  margin-top: 5rem;
+}
+/* End of Footer */
+
+/*------------------------------------------
+
+Beginnning of Media
+
+-------------------------------------------*/
 @media (min-width: 46.88rem) {
   .main-header-side-content {
     display: block;
@@ -352,6 +493,15 @@ body {
     border: 1px solid black;
     height: 100%;
   }
+  .main-footer-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .footer-about-me {
+
+    max-width: 30rem;
+  }
 }
 @media (max-width: 30rem) {
   .main-nav_items {
@@ -368,6 +518,8 @@ body {
   .open {
     display: block;
   }
+
+
 }
 /* Landscape*/
 @media (max-height: 450px) {
