@@ -272,6 +272,7 @@ body {
 
 .projects {
   margin-top: 2.5rem;
+  padding-top: 4.5rem;
   text-align: center;
 }
 
@@ -295,9 +296,10 @@ body {
 }
 
 .projects-figures figure {
-  height: 100px;
+  padding: 3rem 1rem;
   text-align: center;
   border: solid #484848 0.25px;
+  
 }
 /* End of Projects Sections */
 
