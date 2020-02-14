@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="animations/animate.css">
     <title>Cedrick Monesit</title>
     <script defer src="js/icons/all.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
 <body>
@@ -29,9 +30,11 @@
                     Projects
                 </li>
             </a>
-            <li class="main-nav_item animated fadeInLeft delay-750ms">
-                Contact Me
-            </li>
+            <a href="#main-footer">
+                <li class="main-nav_item animated fadeInLeft delay-750ms">
+                    Contact Me
+                </li>
+            </a>
             <a>
                 <li class="main-nav_item animated fadeInLeft delay-1s" id="resume">
                     Resume
@@ -230,7 +233,7 @@
                 <p>github<i class="icon pos fab fa-github"></i></p>
                 <p>Sass<i class="icon pos fab fa-sass"></i></p>
                 <p>React<i class="icon pos fab fa-react"></i></p>
-                <p>Redux<i class="icon pos fab fa-sass"></i></p>
+                <p>Redux  <span class="iconify" data-icon="simple-icons:redux" data-inline="true"></span></p>
             </div>
         </section>
         <!--End of Technological Skills-->
@@ -268,6 +271,10 @@
 
 </footer>
     <!-- End of Main Footer -->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();

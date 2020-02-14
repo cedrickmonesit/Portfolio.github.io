@@ -4,7 +4,7 @@
 /*Source Sans Pro , sans-serif*/
 @import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
 /*Public Sans , sans-serif*/
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap");
 /* Presets */
 * {
   box-sizing: border-box;
@@ -14,10 +14,6 @@ p {
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -83,7 +79,8 @@ body {
   animation: flipLeft 1s;
   transition: transform 0.5s 0.28s;
 }
-.main-brand_image:hover, .main-brand_image:active {
+.main-brand_image:hover,
+.main-brand_image:active {
   transform: rotateY(360deg);
 }
 
@@ -132,7 +129,8 @@ body {
   color: white;
   transition: color 0.5s;
 }
-.main-nav_item:hover, .main-nav_item:active {
+.main-nav_item:hover,
+.main-nav_item:active {
   color: #75d5fd;
 }
 
@@ -155,7 +153,7 @@ body {
   list-style: none;
   text-align: right;
 }
-.mobile-nav_items a{
+.mobile-nav_items a {
   text-decoration: none;
   font-style: normal;
 }
@@ -164,12 +162,13 @@ body {
   cursor: pointer;
   transition: color 0.5s;
 }
-.mobile-nav_item:hover{
+.mobile-nav_item:hover {
   color: #5bc0de;
 }
 /* Beginning Header Section */
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/computer-desk.jpg") center/cover no-repeat border-box, #14a5d5;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/computer-desk.jpg") center/cover no-repeat border-box, #14a5d5;
   height: 100vh;
   min-height: 35rem;
   padding-top: 15rem;
@@ -223,7 +222,7 @@ body {
   padding: 5rem;
   display: flex;
   justify-content: center;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .summary-block {
@@ -237,7 +236,6 @@ body {
 .summary-about-me {
   font-family: inherit;
 }
-
 
 .heavy {
   font-size: 1.2rem;
@@ -292,80 +290,78 @@ body {
 
 .projects-figures {
   display: block;
-
 }
 
 .projects-figures figure {
   padding: 3rem 1rem;
   text-align: center;
   border: solid #484848 0.25px;
-  
 }
 /* End of Projects Sections */
 
 /* Begginning of Skills 
 Section */
-  .skills {
-    padding: 3rem 1rem;
-    background:#F5F5F5;
-  }
-  .skills h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-  .skills-block {
-    align-items: center;
-    display: grid;
-    gap: 2px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    font-family: 'Alegreya Sans', sans-serif;
-    color: white;
-  }
-  .skills-block p{
-    font-family: inherit;
-    background-color: #5bc0de;
-    border: solid #5bc0de 1px;
-    padding: 1rem 1rem;
-    text-align: center;
-    transition: background-color 0.5s, color 0.5s;
-    border-radius: 0.25rem;
-  }
+.skills {
+  padding: 3rem 1rem;
+  background: #f5f5f5;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.skills-block {
+  align-items: center;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+}
+.skills-block p {
+  font-family: inherit;
+  background-color: #5bc0de;
+  border: solid #5bc0de 1px;
+  padding: 1rem 1rem;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 0.25rem;
+}
 
-  .skills-block p:hover{
-    color: #5bc0de;
-    background-color: white;
-  }
+.skills-block p:hover {
+  color: #5bc0de;
+  background-color: white;
+}
 
-  .pos {
-    margin-left: 0.5rem;
-    font-size: 1rem;
-  }
-  .skills-block p:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-  .skills-block p:nth-child(2) {
-    grid-area: 1 / 3 / 2 / 5;
-  }
-  .skills-block p:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 4;
-  }
-  .skills-block p:nth-child(4) {
-    grid-area: 2 / 4 / 3 / 5;
-  }
-  .skills-block p:nth-child(5) {
-    grid-area: 3 / 1 / 4 / 3;
-  }
-  .skills-block p:nth-child(6) {
-    grid-area: 3 / 3 / 4 / 5;
-  }
-  .skills-block p:nth-child(7) {
-    grid-area: 4 / 1 / 5 / 3;
-  }
-  .skills-block p:nth-child(8) {
-    grid-area: 4 / 3 / 5 / 5;
-  }
+.pos {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+.skills-block p:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.skills-block p:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 5;
+}
+.skills-block p:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 4;
+}
+.skills-block p:nth-child(4) {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.skills-block p:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 3;
+}
+.skills-block p:nth-child(6) {
+  grid-area: 3 / 3 / 4 / 5;
+}
+.skills-block p:nth-child(7) {
+  grid-area: 4 / 1 / 5 / 3;
+}
+.skills-block p:nth-child(8) {
+  grid-area: 4 / 3 / 5 / 5;
+}
 /* End of skills Section */
 
 /* Beginning of Footer */
@@ -379,13 +375,13 @@ Section */
   padding: 3rem 1rem;
   font-family: inherit;
 }
-.main-footer a{
+.main-footer a {
   text-decoration: none;
   font-family: inherit;
   color: white;
 }
 .main-footer-content {
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
@@ -397,17 +393,15 @@ Section */
   transition: color 0.5s;
 }
 .footer-social-content a:hover {
-  color: #5bc0de; 
+  color: #5bc0de;
 }
 .footer-address-content a {
   display: inline-block;
-  margin-top: 0.5rem; 
-
+  margin-top: 0.5rem;
 }
 .footer-address-content i {
   display: inline-block;
-  margin-right: 0.2rem; 
-
+  margin-right: 0.2rem;
 }
 .footer-rights {
   text-align: center;
@@ -447,7 +441,7 @@ Beginnning of Media
   }
 
   .main-header-side-content button:hover,
-.main-header-side-content button:active {
+  .main-header-side-content button:active {
     color: white;
     background: #5bc0de;
   }
@@ -484,7 +478,10 @@ Beginnning of Media
   .projects-figures {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, [column-start] minmax(100px, 250px) [column-end]);
+    grid-template-columns: repeat(
+      4,
+      [column-start] minmax(100px, 250px) [column-end]
+    );
     grid-template-rows: repeat(2, [row-start] minmax(200px, 300px) [row-end]);
     grid-gap: 10px;
     padding: 1rem;
@@ -501,7 +498,6 @@ Beginnning of Media
     text-align: left;
   }
   .footer-about-me {
-
     max-width: 30rem;
   }
 }
@@ -520,8 +516,6 @@ Beginnning of Media
   .open {
     display: block;
   }
-
-
 }
 /* Landscape*/
 @media (max-height: 450px) {
