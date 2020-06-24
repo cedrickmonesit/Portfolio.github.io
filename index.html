@@ -52,19 +52,21 @@
     <!-- Start of Mobile Nav -->
     <nav class="mobile-nav">
         <ul class="mobile-nav_items">
-            <a>
+            <a href="#about-me"> 
                 <li class="mobile-nav_item animated fadeInRight delay-250ms">
                     About Me
                 </li>
             </a>
-            <a href="#projects">
+            <a href="#project-list">
                 <li class="mobile-nav_item animated fadeInRight delay-500ms">
                     Projects
                 </li>
             </a>
-            <li class="mobile-nav_item animated fadeInRight delay-750ms">
-                Contact Me
-            </li>
+            <a href="#main-footer">
+                <li class="mobile-nav_item animated fadeInRight delay-750ms">
+                    Contact Me
+                </li>
+            </a>
             <a>
                 <li class="mobile-nav_item animated fadeInRight delay-1s" id="resume">
                     Resume
@@ -89,10 +91,8 @@
             <!-- End of Main Header Content -->
             <div class="main-header-side-content animated fadeIn delay-500ms">
                 <p>Want to get in touch? I'm always looking for new projects and opportunities. Get in touch!</p>
-                <a href="index.html">
-                    <button>
-                        Get in touch
-                    </button>
+                <a href="#main-footer">
+                        <button> Get in touch </button> 
                 </a>
             </div>
             <!-- End of Main Header Side Content -->
@@ -113,9 +113,7 @@
                     <hr>
                     <p class="heavy">Hello my name is Cedrick and I'm a Front End Developer</p>
                     <p>I'm a self taught developer who likes to spend time on new project ideas and learning new skills to keep me updated on the constant evolution in the Tech industry.</p>
-                    <a>
-                        <button class="button">Find Out More</button>
-                    </a>
+                    <a  href="#main-footer" class="button">Find Out More</a>
                 </div>
                 <div class="summary-image-container wow fadeInRight delay-500ms">
                     <img class="summary-image" src="images/network.png" alt="Computer, cloud, and world." />
@@ -133,92 +131,37 @@
             <div class="projects-figures">
                 <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
-
+                        <img src="images/filmflix.png" alt="filmflix"/>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-
-
+                        <h2>Technologies: </h2>
+                        <p>React, Redux, Router, Sass</p>
+                        <h2>Description</h2>
+<p>Filmflix is a movie site that shows the ratings, description, actors, and trailers. I used the IMDB api to get the movie information and latest movies. This project required state management using redux. It is fully responsive and works on mobile devices.</p>
+<a href="https://github.com/cedrickmonesit/film-flix"><button>Code</button></a>
+<a href="https://cedrickmonesit.github.io/film-flix/#/"><button>Website</button></a>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
                <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
-                        
+                        <img src="images/boombox.png" alt="boombox"/>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-
-
+                        <h2>Technologies</h2>
+                        <p>React, Redux, Router, Sass, Node, Express</p>
+                        <h2>Description</h2>
+                        <p>Boombox is a music site using the spotify api. I needed to use a backend using express and node. There is an authentication flow that spotify requires. This app is fully responsive and works on mobile devices. State management was required using redux.</p>
+                        <a href="https://github.com/cedrickmonesit/boombox"><button>Code</button></a>
+                        <a href="https://cedrickmonesit.github.io/boombox/#/"><button>Website</button></a>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
 
 
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
 
-
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
-
-
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
-
-
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
-
-
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
-                <figure class="wow fadeIn delay-750ms">
-                    <div class="figure-image">
-                        
-                    </div>
-                    <!--End of Figure Image-->
-                    <figcaption>
-
-
-                    </figcaption>
-                    <!--End of Figure Caption-->
-                </figure>
             </div>
         </section>
         <!-- End of Projects -->
@@ -254,16 +197,17 @@
                 <p>Most days I enjoy spending my time learning more about new technologies in Web Development, striving to be a better developer.</p>
                 <div class="footer-social-content">
                     <a href="mailto:cedrickmonesit@gmail.com"><i class="icon fas fa-envelope"></i></a>
-                    <a href=""><i class="icon fab fa-github"></i></a>
-                    <a href=""><i class="icon fab fa-instagram"></i></a>
-                    <a href=""><i class="icon fab fa-facebook"></i></a>
+                    <a href="https://github.com/cedrickmonesit" target="_blank"><i class="icon fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/cedrickmonesit/"><i class="icon fab fa-instagram"></i></a>
+                    <a href=https://www.facebook.com/princejohn.monesit?ref=bookmarks"><i class="icon fab fa-facebook"></i></a>
                 </div>
             </div>
             <address class="footer-address-content">
                 <h2>Say Hello:</h2>
                 <p><i class="icon fas fa-map-marker-alt"></i>    Address: Waltham, MA 02453</p>
             <a href="mailto:cedrickmonesit@gmail.com">        <i class="icon fas fa-envelope"></i>            Email: cedrickmonesit@gmail.com</a>
-            <p><i class="icon fas fa-phone-alt"></i>    Phone: 508-494-4306</p>
+            <p><i class="icon fas fa-phone-alt"></i>:      <a href="tel: 508-494-4306">508-494-4306</a>
+            </p>
             <address/>
         </div>
         <div class="footer-rights ">© 2020 Cedrick Monesit</div>
