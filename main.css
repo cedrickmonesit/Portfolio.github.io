@@ -73,6 +73,10 @@ body {
   display: flex;
 }
 
+.main-brand a {
+  display: block;
+}
+
 .main-brand_image {
   width: 3rem;
   height: 3rem;
