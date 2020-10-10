@@ -513,7 +513,7 @@ Beginnning of Media
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(
-      2,
+      3,
       [column-start] minmax(100px, 425px) [column-end]
     );
     grid-template-rows: repeat(1, [row-start] minmax(300px, 650px) [row-end]);
