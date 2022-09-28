@@ -6,7 +6,11 @@
 /*Public Sans , sans-serif*/
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:500&display=swap");
 /* Presets */
-* {
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -172,8 +176,7 @@ body {
 }
 /* Beginning Header Section */
 .main-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/computer-desk.jpg") center/cover no-repeat border-box, #14a5d5;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/computer-desk.jpg") center/cover no-repeat border-box, #14a5d5;
   height: 100vh;
   min-height: 35rem;
   padding-top: 15rem;
@@ -200,7 +203,7 @@ body {
   text-align: center;
 }
 .main-header-container .main-header-content .main-full-brand_image {
-  width: 12rem;
+  width: 6rem;
 }
 .main-header-container .main-header-content h1 {
   font-family: "Oswald", sans-serif;
@@ -299,13 +302,15 @@ body {
 
 .figure-image img {
   width: 100%;
-  height: 16rem;
 }
 
 .projects-figures figure {
   padding: 1rem;
   text-align: center;
   transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects-figures figure a button {
@@ -314,8 +319,9 @@ body {
   background-color: #5bc0de;
   border: solid #5bc0de 1px;
   color: white;
-  font-size: 1rem;
-  padding: 1rem 2rem;
+  font-size: 16px;
+  padding: 8px 21px;
+  min-width: 100px;
   text-align: center;
   transition: background-color 0.5s, color 0.5s;
   border-radius: 0.25rem;
@@ -344,14 +350,18 @@ Section */
 .skills-block {
   align-items: center;
   display: grid;
-  gap: 2px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 400px); /*auto fill will leave empty cells*/
+  grid-template-rows: repeat(auto-fit, 50px); /*auto fit will center cells and will share empty cells to center*/
+  grid-gap: 5px;
   justify-content: center;
   font-family: "Alegreya Sans", sans-serif;
   color: white;
 }
 .skills-block p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   font-family: inherit;
   background-color: #5bc0de;
   border: solid #5bc0de 1px;
@@ -361,6 +371,10 @@ Section */
   border-radius: 0.25rem;
 }
 
+.skills-block svg {
+  margin-left: 8px;
+}
+
 .skills-block p:hover {
   color: #5bc0de;
   background-color: white;
@@ -368,66 +382,7 @@ Section */
 
 .pos {
   margin-left: 0.5rem;
-  font-size: 1rem;
-}
-/* html skill */
-.skills-block p:nth-child(1) {
-  grid-area: 1 / 1 / 2 / 3;
-}
-/* css skill */
-.skills-block p:nth-child(2) {
-  grid-area: 1 / 3 / 2 / 5;
-}
-/* javascript skill */
-.skills-block p:nth-child(3) {
-  grid-area: 2 / 1 / 3 / 3;
-}
-/* git skill */
-.skills-block p:nth-child(4) {
-  grid-area: 2 / 3 / 3 / 5;
-}
-/* github skill */
-.skills-block p:nth-child(5) {
-  grid-area: 3 / 1 / 4 / 3;
-}
-/* sass skill */
-.skills-block p:nth-child(6) {
-  grid-area: 3 / 3 / 4 / 5;
-}
-/* react skill */
-.skills-block p:nth-child(7) {
-  grid-area: 4 / 1 / 5 / 3;
-}
-/* redux skill */
-.skills-block p:nth-child(8) {
-  grid-area: 4 / 3 / 5 / 5;
-}
-/* wordpress skill */
-.skills-block p:nth-child(9) {
-  grid-area: 5 / 1 / 5 / 3;
-}
-/* bootstrap skill */
-.skills-block p:nth-child(10) {
-  grid-area: 5 / 3 / 5 / 5;
-}
-/* jquery skill */
-.skills-block p:nth-child(11) {
-  grid-area: 6 / 1 / 6 / 3;
-}
-
-@media (max-width: 768px) {
-  /* javascript skill */
-  .skills-block p:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 4;
-  }
-  /* git skill */
-  .skills-block p:nth-child(4) {
-    grid-area: 2 / 4 / 3 / 5;
-  }
-  /* jquery skill */
-  .skills-block p:nth-child(11) {
-    grid-area: 6 / 1 / 6 / 5;
-  }
+  font-size: 20px;
 }
 
 /* End of skills Section */
@@ -547,18 +502,58 @@ Beginnning of Media
   /* projects figures grid */
   .projects-figures {
     display: grid;
+    grid-template-columns: repeat(auto-fit, 650px); /*auto fill will leave empty cells*/
+    grid-auto-rows: 1fr;
+    width: 100%;
+    grid-gap: 5px;
     justify-content: center;
-    grid-template-columns: repeat(
-      3,
-      [column-start] minmax(100px, 425px) [column-end]
-    );
-    grid-template-rows: repeat(1, [row-start] minmax(300px, 650px) [row-end]);
     padding: 1rem;
   }
 
   .projects-figures figure {
     margin: 0;
     height: 100%;
+  }
+  .projects-figures .figure-image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-figures .figure-image__desktop-image {
+    width: 80%;
+  }
+
+  .projects-figures .figure-image__mobile-image {
+    width: 20%;
+  }
+
+  .figure-technologies_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px); /*auto fill will leave empty cells*/
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .technologies_list-item {
+    margin: 0;
+    padding: 5px 0;
+    background-color: #5bc0de;
+    border: solid #5bc0de 1px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 0.25rem;
+    cursor: default;
+  }
+
+  .technologies_list-item:hover {
+    background: none;
+    color: #5bc0de;
   }
 
   .main-footer-content {
@@ -572,7 +567,6 @@ Beginnning of Media
 }
 @media (max-width: 30rem) {
   .figure-image img {
-    height: 12rem;
   }
   .main-nav_items {
     display: none;

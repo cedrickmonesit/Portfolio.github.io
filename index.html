@@ -20,7 +20,7 @@
             </a>
         </div>
         <ul class="main-nav_items">
-            <a href="#about-me">
+            <a href="#main-footer">
                 <li class="main-nav_item animated fadeInLeft delay-250ms">
                     About Me
                 </li>
@@ -82,7 +82,7 @@
         <div class="main-header-container">
             <div class="main-header-content animated fadeIn delay-500ms">
                 <a href="index.html">
-                    <img class="main-full-brand_image" src="images/brand.png" alt="Cedrick Monesit's brand logo" />
+                    <img class="main-full-brand_image" src="original-brand.png" alt="Cedrick Monesit's brand logo" />
                 </a>
                 <h1>A clear vision leads to success</h1>
                 <p>If you don’t have a vision, you’re going to be stuck in what you know. And the only thing you know is what you’ve already seen.
@@ -105,6 +105,28 @@
     </header>
     <!-- End of Main Header -->
     <main class="main-container" id="main-content">
+        <!-- End of Projects -->
+        <!--<section class="skills wow fadeIn">
+            <h2>Technological Skills</h2>
+            
+            <div class="skills-block">
+                <p>Javascript <i class="icon pos fab fa-js"></i></p>
+                <p>React<i class="icon pos fab fa-react"></i></p>
+                <p>Node <i class="icon pos fab fa-brands fa-node"></i></p>
+                <p>jQuery <span class="iconify" data-icon="bx:bxl-jquery" data-inline="true"></span></p>
+                <p>Redux  <span class="iconify" data-icon="simple-icons:redux" data-inline="true"></span></p>
+                <p>Express  <span class="iconify" data-icon="simple-icons:express" data-inline="true"></span></p>
+                <p>Sass<i class="icon pos fab fa-sass"></i></p>
+                <p>CSS3 <i class="icon pos fab fa-css3-alt"></i></p>
+                <p>Bootstrap <i class="icon pos fab fa-bootstrap"></i></p>
+                <p>HTML <i class="icon pos fab fa-html5"></i></p>
+                <p>PHP <i class="icon pos fab fa-brands fa-php"></i></p>
+                <p>Wordpress <i class="icon pos fab fa-wordpress-simple"></i></p>
+                <p>git <i class="icon pos fab fa-git-square"></i></p>
+                <p>github<i class="icon pos fab fa-github"></i></p>
+            </div>
+        </section>-->
+        <!--End of Technological Skills-->
         <section class="summary" id="about-me">
             <div class="summary-block">
                 <div class="summary-about-me wow fadeInLeft delay-500ms">
@@ -112,7 +134,7 @@
                         <h2>Who am I...</h2>
                     </header>
                     <hr>
-                    <p class="heavy">Hello my name is Cedrick and I'm a Front End Developer</p>
+                    <p class="heavy">Hello my name is Cedrick and I'm a Fullstack Developer</p>
                     <p>I'm a self taught developer who likes to spend time on new project ideas and learning new skills to keep me updated on the constant evolution in the Tech industry.</p>
                     <a  href="#main-footer" class="button">Find Out More</a>
                 </div>
@@ -121,6 +143,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- End of Summary -->
         <section class="projects" id="project-list">
             <div class="projects-content">
@@ -132,45 +155,69 @@
             <div class="projects-figures">
                 <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
-                        <img src="images/filmflix.png" alt="filmflix"/>
+                        <div class="figure-image__container">
+                            <img class="figure-image__desktop-image" src="images/filmflix.png" alt="filmflix"/>
+                            <img class="figure-image__mobile-image" src="images/filmflix-mobile.png" alt="filmflix"/>
+                        </div>
+                        <h2>Technologies: </h2>
+                        <ul class="figure-technologies_list">
+                            <li class="technologies_list-item">JavaScript</li>
+                            <li class="technologies_list-item">React</li>
+                            <li class="technologies_list-item">Redux</li>
+                            <li class="technologies_list-item">Router</li>
+                            <li class="technologies_list-item">Sass</li>
+                            <li class="technologies_list-item">TMDB API</li>
+                        </ul>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-                        <h2>Technologies: </h2>
-                        <p>React, Redux, Router, Sass</p>
+                        
                         <h2>Description</h2>
                         <p>Filmflix is a movie site that shows the ratings, description, actors, and trailers. I used the IMDB api to get the movie information and latest movies. This project required state management using redux. It is fully responsive and works on mobile devices.</p>
-                        <a href="https://github.com/cedrickmonesit/film-flix" target="_blank"><button>Code</button></a>
+                        <a href="https://github.com/cedrickmonesit/film-flix" target="_blank"><button>Frontend Code</button></a>
                         <a href="https://cedrickmonesit.github.io/film-flix/#/" target="_blank"><button>Website</button></a>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
                 <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
-                        <img src="images/urbanfitness.png" alt="urbanfitness"/>
+                        <img src="images/kixs.png" alt="filmflix"/>
+                        <h2>Technologies: </h2>
+                        <ul class="figure-technologies_list">
+                            <li class="technologies_list-item">JavaScript</li>
+                            <li class="technologies_list-item">React</li>
+                            <li class="technologies_list-item">Router</li>
+                            <li class="technologies_list-item">Sass</li>
+                            <li class="technologies_list-item">Node</li>
+                            <li class="technologies_list-item">Express</li>
+                            <li class="technologies_list-item">Firebase</li>
+                            <li class="technologies_list-item">Firestore</li>
+                        </ul>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-                        <h2>Technologies</h2>
-                        <p>Wordpress, PHP, Semantic HTML, CSS, Interactive Javascript</p>
                         <h2>Description</h2>
-                        <p>UrbanFitness is a gym, health, and fitness site that provides clients a way to achieve their personal goals. Providing a blog for individuals new to the fitness world and gym trainers. using advance custom fields for future content creation on the Wordpress panel.</p>
-                        <a href="https://github.com/cedrickmonesit/urbanfitness" target="_blank"><button>Code</button></a>
-                        <a href="http://urbanfitness.ga/" target="_blank"><button>Website</button></a>
+                        <p>Filmflix is a movie site that shows the ratings, description, actors, and trailers. I used the IMDB api to get the movie information and latest movies. This project required state management using redux. It is fully responsive and works on mobile devices.</p>
+                        <a href="https://github.com/cedrickmonesit/kixs-client" target="_blank"><button>Frontend Code</button></a>
+                        <a href="https://github.com/cedrickmonesit/kixs-server" target="_blank"><button>Backend Code</button></a>
+                        <a href="https://docs.google.com/document/d/1iecYqgtH6zJPLJF2F_piGhA5sVzugsgB9g6xUN6U_hI/edit?usp=sharing" target="_blank"><button>Documentation</button></a>
+                        <a href="https://cedrickmonesit.github.io/kixs-client/" target="_blank"><button>Website</button></a>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
                 <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
                         <img src="images/digital-elite.png" alt="digital elite"/>
+                        <h2>Technologies</h2>
+                            <ul class="figure-technologies_list">
+                                <li class="technologies_list-item">HTML</li>
+                                <li class="technologies_list-item">CSS</li>
+                                <li class="technologies_list-item">JavaScript</li>
+                            </ul>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-                        <h2>Technologies</h2>
-                        <p>Semantic HTML, CSS, Font Awesome,
-                            Interactive JavaScript,
-                            Wow.js,
-                            Smooth Scroll.js</p>
+                        
                         <h2>Description</h2>
                         <p>Digital Elite is a marketing site that helps clients digitize their presence online. This app is fully responsive and works on mobile devices. Created with HTML, CSS, Javascript </p>
                         <a href="https://github.com/cedrickmonesit/digital-elite" target="_blank"><button>Code</button></a>
@@ -181,11 +228,20 @@
                <figure class="wow fadeIn delay-750ms">
                     <div class="figure-image">
                         <img src="images/boombox.png" alt="boombox"/>
+                        <h2>Technologies</h2>
+                        <ul class="figure-technologies_list">
+                            <li class="technologies_list-item">JavaScript</li>
+                            <li class="technologies_list-item">React</li>
+                            <li class="technologies_list-item">Redux</li>
+                            <li class="technologies_list-item">Router</li>
+                            <li class="technologies_list-item">Sass</li>
+                            <li class="technologies_list-item">Node</li>
+                            <li class="technologies_list-item">Express</li>
+                        </ul>
                     </div>
                     <!--End of Figure Image-->
                     <figcaption>
-                        <h2>Technologies</h2>
-                        <p>React, Redux, Router, Sass, Node, Express</p>
+                        
                         <h2>Description</h2>
                         <p>Boombox is a music site using the spotify api. I needed to use a backend using express and node. There is an authentication flow that spotify requires. This app is fully responsive and works on mobile devices. State management was required using redux.</p>
                         <a href="https://github.com/cedrickmonesit/boombox" target="_blank"><button>Code</button></a>
@@ -193,30 +249,30 @@
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
-
-
-
+                <figure class="wow fadeIn delay-750ms">
+                    <div class="figure-image">
+                        <img src="images/urbanfitness.png" alt="urbanfitness"/>
+                        <h2>Technologies</h2>
+                        <ul class="figure-technologies_list">
+                            <li class="technologies_list-item">Wordpress</li>
+                            <li class="technologies_list-item">PHP</li>
+                            <li class="technologies_list-item">HTML</li>
+                            <li class="technologies_list-item">CSS</li>
+                            <li class="technologies_list-item">Javascript</li>
+                        </ul>
+                    </div>
+                    <!--End of Figure Image-->
+                    <figcaption>
+                        
+                        <h2>Description</h2>
+                        <p>UrbanFitness is a gym, health, and fitness site that provides clients a way to achieve their personal goals. Providing a blog for individuals new to the fitness world and gym trainers. using advance custom fields for future content creation on the Wordpress panel.</p>
+                        <a href="https://github.com/cedrickmonesit/urbanfitness" target="_blank"><button>Code</button></a>
+                    </figcaption>
+                    <!--End of Figure Caption-->
+                </figure>
             </div>
         </section>
-        <!-- End of Projects -->
-        <section class="skills wow fadeIn">
-            <h2>Technological Skills</h2>
-            
-            <div class="skills-block">
-                <p>Semantic HTML <i class="icon pos fab fa-html5"></i></p>
-                <p>Responsive CSS3 <i class="icon pos fab fa-css3-alt"></i></p>
-                <p>Interactive Javascript <i class="icon pos fab fa-js"></i></p>
-                <p>git <i class="icon pos fab fa-git-square"></i></p>
-                <p>github<i class="icon pos fab fa-github"></i></p>
-                <p>Sass<i class="icon pos fab fa-sass"></i></p>
-                <p>React<i class="icon pos fab fa-react"></i></p>
-                <p>Redux  <span class="iconify" data-icon="simple-icons:redux" data-inline="true"></span></p>
-                <p>Wordpress <i class="icon pos fab fa-wordpress-simple"></i></p>
-                <p>Bootstrap <i class="icon pos fab fa-bootstrap"></i></p>
-                <p>jQuery <span class="iconify" data-icon="bx:bxl-jquery" data-inline="true"></span></p>
-            </div>
-        </section>
-        <!--End of Technological Skills-->
+        
     </main>
     <!-- End of Main Container -->
                     
@@ -228,7 +284,7 @@
         <div class="main-footer-content">
             <div class="footer-about-me">
                 <h2>About Cedrick</h2>
-                <p>My name is Cedrick and I'm a Front End Developer.</p>
+                <p>My name is Cedrick and I'm a Full Stack Developer.</p>
                 <p>My very first line of code was on Codecademy back in Middle School where I first learned HTML ever since then I've wanted to learn more about the Web and creating beautiful websites from scratch.</p>
                 <p>I started my journey as a self-taught web developer when i created my first website project Freshman year of High School.</p>
                 <p>Most days I enjoy spending my time learning more about new technologies in Web Development, striving to be a better developer.</p>
@@ -241,13 +297,13 @@
             </div>
             <address class="footer-address-content">
                 <h2>Say Hello:</h2>
-                <p><i class="icon fas fa-map-marker-alt"></i>    Address: Waltham, MA 02453</p>
+                <p><i class="icon fas fa-map-marker-alt"></i>    Address: Framingham, MA 01701</p>
             <a href="mailto:cedrickmonesit@gmail.com">        <i class="icon fas fa-envelope"></i>            Email: cedrickmonesit@gmail.com</a>
             <p><i class="icon fas fa-phone-alt"></i>:      <a href="tel: 508-494-4306">508-494-4306</a>
             </p>
             <address/>
         </div>
-        <div class="footer-rights ">© 2020 Cedrick Monesit</div>
+        <div class="footer-rights ">© 2022 Cedrick Monesit</div>
     </div>
 
 </footer>
