@@ -20,11 +20,6 @@
             </a>
         </div>
         <ul class="main-nav_items">
-            <a href="#main-footer">
-                <li class="main-nav_item animated fadeInLeft delay-250ms">
-                    About Me
-                </li>
-            </a>
             <a href="#project-list">
                 <li class="main-nav_item animated fadeInLeft delay-500ms">
                     Projects
@@ -33,6 +28,11 @@
             <a href="#main-footer">
                 <li class="main-nav_item animated fadeInLeft delay-750ms">
                     Contact Me
+                </li>
+            </a>
+            <a href="#main-footer">
+                <li class="main-nav_item animated fadeInLeft delay-250ms">
+                    About Me
                 </li>
             </a>
             <a
@@ -84,14 +84,14 @@
                 <a href="index.html">
                     <img class="main-full-brand_image" src="original-brand.png" alt="Cedrick Monesit's brand logo" />
                 </a>
-                <h1>A clear vision leads to success</h1>
-                <p>If you don’t have a vision, you’re going to be stuck in what you know. And the only thing you know is what you’ve already seen.
+                <h1>Are you ready to sprint if
                     <br />
-                    - Iyanla Vanzant</p>
+                    the distance is unknown?</h1>
+
             </div>
             <!-- End of Main Header Content -->
             <div class="main-header-side-content animated fadeIn delay-500ms">
-                <p>Want to get in touch? I'm always looking for new projects and opportunities. Get in touch!</p>
+                <p>Want to get in touch? I'm always looking <br/>for new projects and opportunities. </p>
                 <a href="#main-footer">
                         <button> Get in touch </button> 
                 </a>
@@ -130,7 +130,7 @@
         <section class="projects" id="project-list">
             <div class="projects-content">
                 <header class="wow fadeInUp">
-                    <h2>My Projects</h2>
+                    <h2>Personal Projects</h2>
                     <hr>
                 </header>
             </div>
@@ -156,10 +156,11 @@
                         
                         <h2>Description</h2>
                         <p>Filmflix is a movie site that shows the ratings, description, actors, and trailers. I used the IMDB api to get the movie information and latest movies. This project required state management using redux. It is fully responsive and works on mobile devices.</p>
-                        <a href="https://cedrickmonesit.github.io/film-flix/#/" target="_blank"><button>Website</button></a>
-                        <a href="https://github.com/cedrickmonesit/film-flix" target="_blank"><button>Frontend Code</button></a>                        
-                        <a href="https://drive.google.com/file/d/1NJj9WSQcn2XEL3cILoxpstQyxOilciWv/view?usp=sharing" target="_blank"><button>Wireframe</button></a>
-
+                        <div class="buttons-container">
+                            <a href="https://cedrickmonesit.github.io/film-flix/#/" target="_blank"><button>Website</button></a>
+                            <a href="https://github.com/cedrickmonesit/film-flix" target="_blank"><button>Frontend Code</button></a>                        
+                            <a href="https://drive.google.com/file/d/1NJj9WSQcn2XEL3cILoxpstQyxOilciWv/view?usp=sharing" target="_blank"><button>Wireframe</button></a>
+                        </div>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
@@ -177,8 +178,8 @@
                             <li class="technologies_list-item">Sass</li>
                             <li class="technologies_list-item">Node</li>
                             <li class="technologies_list-item">Express</li>
-                            <li class="technologies_list-item">Firebase</li>
-                            <li class="technologies_list-item">Firestore</li>
+                            <li class="technologies_list-item">Auth0</li>
+                            <li class="technologies_list-item">AWS</li>
                         </ul>
                     </div>
                     <!--End of Figure Image-->
@@ -219,9 +220,11 @@
                         
                         <h2>Description</h2>
                         <p>Boombox is a music site using the spotify api. I needed to use a backend using express and node. There is an authentication flow that spotify requires. This app is fully responsive and works on mobile devices. State management was required using redux.</p>
-                        <a href="https://cedrickmonesit.github.io/boombox/#/" target="_blank"><button>Website</button></a>
+                        <div class="buttons-container">
+                            <a href="https://cedrickmonesit.github.io/boombox/#/" target="_blank"><button>Website</button></a>
                             <a href="https://github.com/cedrickmonesit/boombox" target="_blank"><button>Frontend code</button></a>
                             <a href="https://drive.google.com/file/d/1mVUS-OhTCIK19l7HwQ1jeY6RIsACpPl3/view?usp=sharing" target="_blank"><button>Wireframe</button></a>
+                        </div>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
@@ -243,8 +246,8 @@
                         
                         <h2>Description</h2>
                         <p>Digital Elite is a marketing site that helps clients digitize their presence online. This app is fully responsive and works on mobile devices. Created with HTML, CSS, Javascript </p>
-                        <a href="https://github.com/cedrickmonesit/digital-elite" target="_blank"><button>Code</button></a>
                         <a href="https://cedrickmonesit.github.io/digital-elite/" target="_blank"><button>Website</button></a>
+                        <a href="https://github.com/cedrickmonesit/digital-elite" target="_blank"><button>Code</button></a>
                     </figcaption>
                     <!--End of Figure Caption-->
                 </figure>
@@ -271,6 +274,7 @@
                 </figure>
             </div>
         </section>
+        <!--
         <section class="summary" id="about-me">
             <div class="summary-block">
                 <div class="summary-about-me wow fadeInLeft delay-500ms">
@@ -286,7 +290,7 @@
                     <img class="summary-image" src="images/network.png" alt="Computer, cloud, and world." />
                 </div>
             </div>
-        </section>
+        </section>-->
         
         <!-- End of Summary -->
         
@@ -308,8 +312,8 @@
                 <div class="footer-social-content">
                     <a href="mailto:cedrickmonesit@gmail.com"><i class="icon fas fa-envelope"></i></a>
                     <a href="https://github.com/cedrickmonesit" target="_blank"><i class="icon fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/cedrickmonesit/"><i class="icon fab fa-instagram"></i></a>
-                    <a href=https://www.facebook.com/princejohn.monesit?ref=bookmarks"><i class="icon fab fa-facebook"></i></a>
+                    <!--<a href="https://www.instagram.com/cedrickmonesit/"><i class="icon fab fa-instagram"></i></a>-->
+                    <!--<a href=https://www.facebook.com/princejohn.monesit?ref=bookmarks"><i class="icon fab fa-facebook"></i></a>-->
                 </div>
             </div>
             <address class="footer-address-content">

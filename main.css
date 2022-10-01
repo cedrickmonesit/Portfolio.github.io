@@ -404,6 +404,7 @@ Section */
   text-align: center;
   transition: background-color 0.5s, color 0.5s;
   border-radius: 0.25rem;
+  cursor: default;
 }
 
 .skills-block svg {
@@ -703,6 +704,10 @@ Beginnning of Media
     grid-template-columns: repeat(auto-fit, 400px); /*auto fill will leave empty cells*/
     grid-auto-rows: 1fr;
     justify-content: center;
+  }
+
+  .projects-figures figure {
+    max-height: 800px;
   }
 
   .projects-figures figure figcaption a {
