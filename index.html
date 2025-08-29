@@ -20,6 +20,11 @@
             </a>
         </div>
         <ul class="main-nav_items">
+            <a href="#certifications-list">
+                <li class="main-nav_item animated fadeInLeft delay-250ms">
+                    Certifications
+                </li>
+            </a>
             <a href="#project-list">
                 <li class="main-nav_item animated fadeInLeft delay-500ms">
                     Projects
@@ -31,13 +36,13 @@
                 </li>
             </a>
             <a href="#main-footer">
-                <li class="main-nav_item animated fadeInLeft delay-250ms">
+                <li class="main-nav_item animated fadeInLeft delay-1000ms">
                     About Me
                 </li>
             </a>
             <a
             href="download/resume.pdf" download>
-                <li class="main-nav_item animated fadeInLeft delay-1s" id="resume">
+                <li class="main-nav_item animated fadeInLeft delay-1250ms" id="resume">
                     Resume
                     <span>
                         <i class="fas fa-download" id="resume-download-button"></i>
@@ -53,9 +58,9 @@
     <!-- Start of Mobile Nav -->
     <nav class="mobile-nav">
         <ul class="mobile-nav_items">
-            <a href="#about-me"> 
+            <a href="#certifications-list">
                 <li class="mobile-nav_item animated fadeInRight delay-250ms">
-                    About Me
+                    Certifications
                 </li>
             </a>
             <a href="#project-list">
@@ -63,13 +68,18 @@
                     Projects
                 </li>
             </a>
-            <a href="#main-footer">
+            <a href="#about-me"> 
                 <li class="mobile-nav_item animated fadeInRight delay-750ms">
+                    About Me
+                </li>
+            </a>
+            <a href="#main-footer">
+                <li class="mobile-nav_item animated fadeInRight delay-1000ms">
                     Contact Me
                 </li>
             </a>
             <a href="download/Resume.png" download>             
-             <li class="mobile-nav_item animated fadeInRight delay-1s" id="resume">
+             <li class="mobile-nav_item animated fadeInRight delay-1250ms" id="resume">
                     Resume
                     <i class="fas fa-download" id="resume-download-button"></i>
                 </li>
@@ -84,9 +94,9 @@
                 <a href="index.html">
                     <img class="main-full-brand_image" src="original-brand.png" alt="Cedrick Monesit's brand logo" />
                 </a>
-                <h1>Are you ready to sprint if
+                <h1>Prince John Chydrick Monesit
                     <br />
-                    the distance is unknown?</h1>
+                    Web Developer / IT Specialist</h1>
 
             </div>
             <!-- End of Main Header Content -->
@@ -105,9 +115,37 @@
     </header>
     <!-- End of Main Header -->
     <main class="main-container" id="main-content">
+        <section class="certifications-block" id="certifications-list">
+            <h2>Certifications</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-image"><img src="/images/cios_badge.png" alt="CompTIA CIOS Badge"/></div>
+                    <h3 class="card-title">CompTIA CIOS</h3>
+                    <a href="https://www.credly.com/badges/cc4fef41-5b36-4f33-8531-1747379fd89b" target="_blank">Verify</a>
+
+                </div>
+                
+                <div class="card">
+                    <div class="card-image"><img src="/images/network_badge.png" alt="CompTIA Network+ Badge"/></div>
+                    <h3 class="card-title">ComTIA Network+</h3>
+                    <a href="https://www.credly.com/badges/716f30c8-e807-4b84-868c-b0a74f1acb93" target="_blank">Verify</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image"><img src="/images/a_badge.png" alt="CompTIA A+ Badge"/></div>
+                    <h3 class="card-title">CompTIA A+</h3>
+                    <a href="https://www.credly.com/badges/0d2d704b-5b2d-474c-a240-d1b22a5d8bcc" target="_blank">Verify</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image"><img src="/images/itf_badge.png" alt="CompTIA ITF+ Badge"/></div>
+                    <h3 class="card-title">CompTIA ITF+</h3>
+                    <a href="https://www.credly.com/badges/9277d72b-bf87-463c-bbfc-9428b09afda3" target="_blank">Verify</a>
+                </div>
+            </div>
+        </section>
         <section class="skills wow fadeIn">
             <h2>Technological Skills</h2>
-            
             <div class="skills-block">
                 <p>Javascript <i class="icon pos fab fa-js"></i></p>
                 <p>React<i class="icon pos fab fa-react"></i></p>
@@ -274,24 +312,6 @@
                 </figure>
             </div>
         </section>
-        <!--
-        <section class="summary" id="about-me">
-            <div class="summary-block">
-                <div class="summary-about-me wow fadeInLeft delay-500ms">
-                    <header>
-                        <h2>Who am I...</h2>
-                    </header>
-                    <hr>
-                    <p class="heavy">Hello my name is Cedrick and I'm a Fullstack Developer</p>
-                    <p>I'm a self taught developer who likes to spend time on new project ideas and learning new skills to keep me updated on the constant evolution in the Tech industry.</p>
-                    <a  href="#main-footer" class="button">Find Out More</a>
-                </div>
-                <div class="summary-image-container wow fadeInRight delay-500ms">
-                    <img class="summary-image" src="images/network.png" alt="Computer, cloud, and world." />
-                </div>
-            </div>
-        </section>-->
-        
         <!-- End of Summary -->
         
     </main>
@@ -305,10 +325,12 @@
         <div class="main-footer-content">
             <div class="footer-about-me">
                 <h2>About Cedrick</h2>
-                <p>My name is Cedrick and I'm a Full Stack Developer.</p>
+                <p>My name is Cedrick and I'm a full time university student, web developer, and certified IT sepcialist</p>
+                <p>I'm currently working towards a Bachelor of Science in Cybersecurity and Information Assurance</p>
                 <p>My very first line of code was on Codecademy back in Middle School where I first learned HTML ever since then I've wanted to learn more about the Web and creating beautiful websites from scratch.</p>
                 <p>I started my journey as a developer when I created my first website Freshman year of High School.</p>
-                <p>Most days I enjoy spending my time learning more about new technologies in web development, striving to be a better developer.</p>
+                <p>I also built my first gaming desktop in high school and since then it has been my hobby to upgrade and build my gaming desktops and workstations for my homelab.</p>
+                <p>Most days I enjoy spending my time learning more about new technologies in information technology and software development, striving to be a better professional.</p>
                 <div class="footer-social-content">
                     <a href="mailto:cedrickmonesit@gmail.com"><i class="icon fas fa-envelope"></i></a>
                     <a href="https://github.com/cedrickmonesit" target="_blank"><i class="icon fab fa-github"></i></a>
@@ -324,7 +346,7 @@
             </p>
             <address/>
         </div>
-        <div class="footer-rights ">© 2022 Cedrick Monesit</div>
+        <div class="footer-rights ">© 2025 Cedrick Monesit</div>
     </div>
 
 </footer>
