@@ -643,6 +643,10 @@ Beginnning of Media
   font-size: 2rem;
 }
 
+.certifications-block .card-container {
+  max-width: 60%;
+}
+
 .hardware-block {
     font-family: 'Arial', sans-serif;
     background: white;
